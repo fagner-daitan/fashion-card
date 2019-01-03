@@ -1,0 +1,38 @@
+// stylelint-disable rscss/class-format
+@include font-face('Metropolis', 300, 'src/assets/fonts/metropolis-light');
+@include font-face('Metropolis', 400, 'src/assets/fonts/metropolis-regular');
+@include font-face('Metropolis', 500, 'src/assets/fonts/metropolis-medium');
+@include font-face('Metropolis', 600, 'src/assets/fonts/metropolis-semibold');
+@include font-face('SVGicons', 400, 'src/assets/fonts/svgicons');
+
+body {
+  font-family: Metropolis, Helvetica, Arial, sans-serif;
+  font-size: 12px;
+  line-height: 1;
+  text-rendering: optimizeLegibility;
+  font-feature-settings: 'liga' 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: inherit;
+  line-height: inherit;
+  -webkit-font-smoothing: inherit;
+  -moz-osx-font-smoothing: inherit;
+}

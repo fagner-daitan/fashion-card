@@ -1,0 +1,17 @@
+@function z-index($value) {
+  $z-index: (
+    'section-before': -2,
+    'section-after': -1,
+    'header': 1,
+    'grid-overlay': 999
+  );
+
+  @if map-has-key($z-index, $value) {
+    @return map-get($z-index, $value);
+  }
+
+  @else {
+    @error 'Unfortunately, no value could be retrieved from `#{$value}`. '
+      + 'Please make sure it is defined in `$z-index` map.';
+  }
+}

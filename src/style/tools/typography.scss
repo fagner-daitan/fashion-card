@@ -1,0 +1,100 @@
+@mixin typography($element) {
+  $elements: (
+    'h1': (
+      'font-size': 48px,
+      'line-height': baseline(18),
+      'letter-spacing': -0.2px,
+      'color': $black,
+      'font-weight': 300
+    ),
+    'h2': (
+      'font-size': 40px,
+      'line-height': baseline(14),
+      'letter-spacing': -0.1px,
+      'color': $black,
+      'font-weight': 300
+    ),
+    'h3': (
+      'font-size': 32px,
+      'line-height': baseline(12),
+      'letter-spacing': -0.1px,
+      'color': $black,
+      'font-weight': 300
+    ),
+    'h4': (
+      'font-size': 24px,
+      'line-height': baseline(8),
+      'letter-spacing': 0,
+      'color': $grey-dark,
+      'font-weight': 400
+    ),
+    'h5': (
+      'font-size': 20px,
+      'line-height': baseline(7),
+      'letter-spacing': 0.1px,
+      'color': $mine-shaft,
+      'font-weight': 400
+    ),
+    'h6': (
+      'font-size': 20px,
+      'line-height': baseline(7),
+      'letter-spacing': 0.1px,
+      'color': $mine-shaft,
+      'font-weight': 500
+    ),
+    'p1': (
+      'font-size': 16px,
+      'line-height': baseline(6),
+      'letter-spacing': 0,
+      'color': $grey-dark,
+      'font-weight': 400
+    ),
+    'p2': (
+      'font-size': 16px,
+      'line-height': baseline(6),
+      'letter-spacing': 0.1px,
+      'color': $grey-dark,
+      'font-weight': 500
+    ),
+    'p3': (
+      'font-size': 14px,
+      'line-height': baseline(5),
+      'letter-spacing': 0,
+      'color': $grey-dark,
+      'font-weight': 400
+    ),
+    'p4': (
+      'font-size': 14px,
+      'line-height': baseline(5),
+      'letter-spacing': 0,
+      'color': $grey-dark,
+      'font-weight': 600
+    ),
+    'p5': (
+      'font-size': 12px,
+      'line-height': baseline(4),
+      'letter-spacing': 0.1px,
+      'color': $grey-dark,
+      'font-weight': 400
+    ),
+    'p6': (
+      'font-size': 12px,
+      'line-height': baseline(4),
+      'letter-spacing': 0.2px,
+      'color': $grey-dark,
+      'font-weight': 600
+    )
+  );
+
+  $font-size: map-get(map-get($elements, $element), 'font-size');
+  $line-height: map-get(map-get($elements, $element), 'line-height');
+  $letter-spacing: map-get(map-get($elements, $element), 'letter-spacing');
+  $color: map-get(map-get($elements, $element), 'color');
+  $font-weight: map-get(map-get($elements, $element), 'font-weight');
+
+  font-size: $font-size;
+  line-height: $line-height;
+  letter-spacing: $letter-spacing;
+  color: $color;
+  font-weight: $font-weight;
+}

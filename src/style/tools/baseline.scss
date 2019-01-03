@@ -1,0 +1,9 @@
+@function baseline($value: 1) {
+  $baseline: 4px;
+
+  @if round($value) == $value {
+    @return $baseline * $value;
+  }
+
+  @else { @error 'You should only use integer values.'; }
+}

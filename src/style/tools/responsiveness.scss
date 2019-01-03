@@ -1,0 +1,18 @@
+@mixin respond-to($breakpoint) {
+  @if map-has-key($breakpoints, $breakpoint) {
+    @media (min-width: map-get($breakpoints, $breakpoint)) { @content; }
+  }
+
+  @else {
+    @error 'Unfortunately, no value could be retrieved from `#{$breakpoint}`. '
+      + 'Please make sure it is defined in `$breakpoints` map.';
+  }
+}
+
+@function columns($columns) {
+  @if round($columns) == $columns {
+    @return $column-size * $columns - $gutter;
+  }
+
+  @else { @error 'You should only use integer values.'; }
+}

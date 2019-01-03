@@ -1,0 +1,39 @@
+// primary
+$primary: $cerulean;
+$primary-contrast: $white;
+$primary-dark: $deep-cerulean;
+$primary-light: $picton-blue;
+$primary-medium: $scooter;
+
+// primary outline
+$primary-outline: $white;
+$primary-outline-contrast: $green;
+$primary-outline-darker: rgba($white, 0.25);
+$primary-outline-dark: $blue-romance;
+$primary-outline-light: $foam;
+$primary-outline-medium: $hummin-bird;
+
+// secondary
+$secondary: $white;
+$secondary-contrast: $cerulean;
+$secondary-dark: rgba($pacific-blue, 0.2);
+$secondary-light: rgba($pacific-blue, 0.05);
+$secondary-medium: rgba($pacific-blue, 0.1);
+
+// secondary outline
+$secondary-outline: transparent;
+$secondary-outline-contrast: $white;
+$secondary-outline-dark: rgba($foam, 0.5);
+$secondary-outline-light: rgba($foam, 0.15);
+$secondary-outline-medium: rgba($foam, 0.3);
+
+// tertiary
+$tertiary: $white;
+$tertiary-contrast: $cerulean;
+$tertiary-dark: rgba($pacific-blue, 0.2);
+$tertiary-light: rgba($pacific-blue, 0.05);
+$tertiary-medium: rgba($pacific-blue, 0.1);
+
+// medium
+$medium: $grey;
+$medium-light: $grey-light;
