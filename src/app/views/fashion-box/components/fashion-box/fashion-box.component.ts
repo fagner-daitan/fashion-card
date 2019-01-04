@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProfileService } from 'src/app/services/profile.service';
 
 @Component({
   selector: 'app-fashion-box',
@@ -9,13 +10,14 @@ export class FashionBoxComponent implements OnInit {
   private personName: String;
   private personOccupation: String;
 
-  constructor() {
-    this.avatarUrl = 'https://rscard.px-lab.com/startuper/wp-content/uploads/sites/2/2015/11/startuper-hover-1-299x347.jpg';
-    this.personName = 'Robert Smith';
-    this.personOccupation = 'Developer and Startup entrepreneur';
-  }
+  constructor(private profileService: ProfileService) {}
 
   ngOnInit() {
+    const profileData = this.profileService.getProfile();
+
+    this.avatarUrl = profileData.avatarUrl;
+    this.personName = profileData.personName;
+    this.personOccupation = profileData.personOccupation;
   }
 
 }
