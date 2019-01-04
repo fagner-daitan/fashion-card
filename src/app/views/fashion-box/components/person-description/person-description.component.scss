@@ -1,0 +1,33 @@
+// @import '../../../../../styles.scss';
+
+.person-description {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    & > .info {
+        display: flex;
+        align-items: center;
+        margin-bottom: .8em;
+    }
+
+    & > .info > .title {
+        flex: 0 0 120px;
+        @include typography('p5');
+        font-weight: 700;
+    }
+    & > .info > .title > .badge {
+        color: #FFF;
+        background-color: #e8676b;
+        text-align: center;
+        padding: 3px 8px;
+        border-radius: 3px;
+    }
+
+    & > .info > .description {
+        flex: 1 1 auto;
+        @include typography('p2');
+        font-weight: 400;
+    }
+
+}

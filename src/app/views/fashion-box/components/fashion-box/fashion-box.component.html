@@ -1,8 +1,14 @@
 <section class="fashion-box">
-  <app-person-avatar class="avatar"></app-person-avatar>
+  <app-person-avatar
+    class="avatar"
+    [avatarUrl]="avatarUrl">
+  </app-person-avatar>
 
   <div class="description">
-    <app-person-title></app-person-title>
+    <app-person-title
+      [personName]="personName"
+      [personOccupation]="personOccupation">
+    </app-person-title>
     <app-person-description></app-person-description>
   </div>
 </section>

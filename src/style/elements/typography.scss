@@ -5,8 +5,10 @@
 @include font-face('Metropolis', 600, 'src/assets/fonts/metropolis-semibold');
 @include font-face('SVGicons', 400, 'src/assets/fonts/svgicons');
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
 body {
-  font-family: Metropolis, Helvetica, Arial, sans-serif;
+  font-family: 'Open Sans', Helvetica, Arial, sans-serif;
   font-size: 12px;
   line-height: 1;
   text-rendering: optimizeLegibility;
