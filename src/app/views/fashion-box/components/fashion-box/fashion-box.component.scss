@@ -1,0 +1,18 @@
+.fashion-box {
+    display: flex;
+    width: 930px;
+    max-width: 960px;
+    min-height: 443px;
+    padding: 0 15px;
+    background-color: #FFF;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.12),
+                0 1px 4px rgba(0, 0, 0, 0.24);
+}
+
+.fashion-box > .avatar {
+    flex: 0 0 50%;
+}
+
+.fashion-box > .description {
+    flex: 0 0 50%;
+}
