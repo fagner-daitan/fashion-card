@@ -1,5 +1,3 @@
-// @import '../../../../../styles.scss';
-
 .person-description {
     list-style: none;
     margin: 0;
@@ -17,8 +15,8 @@
         font-weight: 700;
     }
     & > .info > .title > .badge {
-        color: #FFF;
-        background-color: #e8676b;
+        color: $white;
+        background-color: $fashion-red;
         text-align: center;
         padding: 3px 8px;
         border-radius: 3px;

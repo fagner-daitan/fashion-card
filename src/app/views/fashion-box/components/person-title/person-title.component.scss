@@ -6,7 +6,7 @@
     flex-direction: column;
     padding-bottom: 25px;
     margin-bottom: 25px;
-    border-bottom: 1px solid  #dedede;
+    border-bottom: 1px solid  $fashion-light-grey;
     color: #3d4451;
 
     & > .preword {
@@ -20,13 +20,13 @@
     & > .preword > .ballon {
         display: inline-block;
         position: relative;
-        color: #FFF;
+        color: $white;
         font-size: .9rem;
         font-weight: 700;
         line-height: 1.1rem;
-        padding: 4px 6px;
+        padding: 6px 8px;
         text-transform: uppercase;
-        background-color: #e8676b;
+        background-color: $fashion-red;
     }
 
     & > .preword > .ballon::before {
@@ -40,7 +40,7 @@
         border-style: solid;
         border-width: 0 0 8px 8px;
         border-color: transparent;
-        border-left-color: #e8676b;
+        border-left-color: $fashion-red;
     }
 
     & > .name {

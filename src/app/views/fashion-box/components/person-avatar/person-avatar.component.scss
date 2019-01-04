@@ -8,6 +8,8 @@
 }
 
 .person-avatar > .avatar {
-    width: auto;
-    height: 100%;
+    width: 100%;
+    height: auto;
+    min-height: 100%;
+    object-fit: contain;
 }

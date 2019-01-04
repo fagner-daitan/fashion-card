@@ -2,7 +2,13 @@ app-root {
     position: relative;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     height: 100vh;
-    background-color: #EEEEEF;
+    flex: 0 0 100vw;
+    box-sizing: border-box;
+    padding-top: 50px;
+
+    @include respond-to('md') {
+        align-items: center;
+    }
 }
