@@ -10,17 +10,17 @@
     margin-bottom: 3em;
     
     & > .avatar {
-        position: relative;
         display: flex;
         flex: 0 1 40%;
         overflow: hidden;
+        padding: 0 0 10px 0;
     }
     
     & > .description {
         display: flex;
         flex-direction: column;
-        position: relative;
         flex: 0 1 60%;
+        margin-left: 0;
     }
 
     @include respond-to('md') {
@@ -28,5 +28,9 @@
         flex: 0 1 40%;
         width: 95vw;
         padding: 30px 20px 15px 20px;
+
+        & > .description {
+            margin-left: 20px;
+        }
     }
 }
